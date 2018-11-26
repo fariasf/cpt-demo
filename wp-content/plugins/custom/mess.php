@@ -8,36 +8,7 @@
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
-class foo {
-	public function foo() {
-		bar::sayhi();
-	}
-	public function bar() {
-		if ( true ) {
-			for( $i = 0; $i < 1000; $i++ ) {
-				if ( false ) {
-					if ( true ) {
-						$i--;
-					} else {
-						// Nothing
-					}
-				} else {
-					if ( $a = $b ) {
-						if ( $c ) {
-							continue;
-						}
-					}
-				}
-			}
-		} else {
-			if ( !!true ) {
-				// More stuff
-			}
-		}
-	}
-}
-static class bar {
-	public function sayhi() {
-		echo 'Hi';
-	}
-}
+
+add_action( 'init', function() {
+	// This is no longer a mess	
+});
