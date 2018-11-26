@@ -20,7 +20,7 @@ jobs:
       - checkout
       # run tests!
       # - run: phpunit
-      - run: php .circleci/phpmd.phar wp-content/plugins/custom cleancode,codesize,design,naming,unusedcode
+      - run: php .circleci/phpmd.phar wp-content/plugins/custom xml cleancode,codesize,design,naming,unusedcode
       # - run:
       #  name: Push to Pantheon
       #  command: bash ./circleci/deploy-to-pantheon.sh
